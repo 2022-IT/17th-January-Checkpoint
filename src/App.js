@@ -17,9 +17,9 @@ getDataUsers();
   },[]);
   console.log(users);
   return (
-    <div className="App">
+    <div style={{ backgroundColor:"lightgrey" }} className="App">
       {users.map((el) => (
-        <Card key={el.id} style={{ width:"18rem", marginLeft:"1.4cm", marginTop:"1.4cm", fontFamily:"inherit", fontSize:"0.46cm", fontWeight:"bold"}}>
+        <Card key={el.id} style={{ width:"18rem", marginBottom:"1.4cm", marginTop:"1.4cm", marginLeft:"1.4cm", fontFamily:"inherit", fontSize:"0.46cm", fontWeight:"bold" }}>
           <Card.Body>
           <Card.Title>{el.id}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">{el.name}</Card.Subtitle>
